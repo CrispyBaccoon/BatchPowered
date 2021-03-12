@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>BIPOS</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://kit.fontawesome.com/830f50fe29.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="bip.css">
+<style>
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="BIPOS_webpage.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="VIIXX.html">VIIXX</a></li>
+  <li><a class="active" href="Script.html">SCRIPT</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"><i class="fas fa-lightbulb"></i> Projects</a>
+    <div class="dropdown-content">
+      <a href="Projects/project1.html">Project 1</a>
+      <a href="Projects/project1.html">Project 2</a>
+      <a href="Projects/project1.html">Project 3</a>
+    </div>
+  </li>
+</ul>
+
+<ul>
+  <li><button type="button" onclick="myFunction()">Click Me!</button></li>
+  <li><button type="button" onclick="codefil()">codefileselect</button></li>
+  
+</ul>  
+
+<h3>Select script to view</h3>
+<p>Click on the <b> script </b> link to see the corresponding code.</p>
+
+<script>
+var framC = document.getElementById("framecode");
+function myFunction() { 
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+
+function codefil() {
+  var codefile = DICE.ps1; 
+  framC.load; 
+}
+</script>
+
+<iframe id="framecode" src="CODE/dice.ps1" style="border:none;height:500px;width:1455px;font-size:24px" title="Iframe Example"></iframe>
+
+<p id="demo"><code>
+
+Selected Script
+
+</code></p>
+
+</body>
+</html>
